@@ -28,17 +28,17 @@ loading.style.display = 'none'
 var onTap, onMouseDown
 
 setTimeout(function () {
-  window.removeEventListener('touchstart', onTap)
-  window.removeEventListener('mousedown', onMouseDown)
+  //window.removeEventListener('touchstart', onTap)
+  //window.removeEventListener('mousedown', onMouseDown)
   //ev.preventDefault()
   loading.style.display = 'block'
   clickToPlay.style.display = 'none'
   canplay()
 },2000)
-onTap = tapEvent(onMouseDown)
+//onTap = tapEvent(onMouseDown)
 
-window.addEventListener('touchstart', onTap)
-window.addEventListener('mousedown', onMouseDown)
+//window.addEventListener('touchstart', onTap)
+//window.addEventListener('mousedown', onMouseDown)
 
 function canplay () {
   // Create an iOS-safe AudioContext which fixes
