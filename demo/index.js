@@ -123,8 +123,8 @@ function start (audioContext, shouldBuffer) {
       clickToPlay.style.display = 'block'
     }
   }
-  window.addEventListener('click', click)
-
+  //window.addEventListener('click', click)
+  click
   function render () {
     var width = app.shape[0]
     var height = app.shape[1]
