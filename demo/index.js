@@ -27,14 +27,14 @@ loading.style.display = 'none'
 // On iOS, it has to be a tap event and not a drag + touchend...
 var onTap, onMouseDown
 
-onMouseDown = function (ev) {
+setTimeout(function () {
   window.removeEventListener('touchstart', onTap)
   window.removeEventListener('mousedown', onMouseDown)
-  ev.preventDefault()
+  //ev.preventDefault()
   loading.style.display = 'block'
   clickToPlay.style.display = 'none'
   canplay()
-}
+},2000)
 onTap = tapEvent(onMouseDown)
 
 window.addEventListener('touchstart', onTap)
